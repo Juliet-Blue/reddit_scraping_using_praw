@@ -48,7 +48,7 @@ for s in sub:
             "comment_body" : [],
             "comment_link_id" : []
         }
-        for submission in subreddit.search(query,sort = "top",limit = 1):
+        for submission in subreddit.search(item,sort = "top",limit = 1):
             post_dict["title"].append(submission.title)
             post_dict["score"].append(submission.score)
             post_dict["id"].append(submission.id)
